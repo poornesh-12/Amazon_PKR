@@ -33,10 +33,10 @@ pipeline {
             }
         }
 
-        stage('Compile') {
-            steps {
-                dir('Amazon'){
-                    sh 'mvn clean compile -B'
+       stage('Compile') {
+    sh 'mvn clean compile -B'
+}
+
                 }
                  // batch mode, jenkins will not interactive question during build (do this or not ...)
             }
